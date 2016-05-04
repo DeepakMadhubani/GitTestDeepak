@@ -4,9 +4,6 @@ import org.jfree.util.Log;
 
 public class test1 {
 
-	/**
-	 * @param args
-	 */
 	public static void main(String[] args) {
 	
 		String issueNumber="Halted (00895892)";
