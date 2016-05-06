@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="SnapDealSuite" duration-ms="87949" started-at="2016-05-06T07:07:27Z" finished-at="2016-05-06T07:08:55Z">
+    <groups>
+    </groups>
+    <test name="OrderProductTest" duration-ms="87949" started-at="2016-05-06T07:07:27Z" finished-at="2016-05-06T07:08:55Z">
+      <class name="SnapdealOrderTest">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:SnapdealOrderTest@41d26b41]" name="Setup" is-config="true" duration-ms="23282" started-at="2016-05-06T12:37:27Z" finished-at="2016-05-06T12:37:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="getExcelReader()[pri:0, instance:SnapdealOrderTest@41d26b41]" name="getExcelReader" is-config="true" duration-ms="881" started-at="2016-05-06T12:37:51Z" finished-at="2016-05-06T12:37:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getExcelReader -->
+        <test-method status="PASS" signature="test()[pri:0, instance:SnapdealOrderTest@41d26b41]" name="test" duration-ms="60584" started-at="2016-05-06T12:37:52Z" finished-at="2016-05-06T12:38:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:SnapdealOrderTest@41d26b41]" name="quitDriver" is-config="true" duration-ms="3150" started-at="2016-05-06T12:38:52Z" finished-at="2016-05-06T12:38:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- SnapdealOrderTest -->
+    </test> <!-- OrderProductTest -->
+  </suite> <!-- SnapDealSuite -->
+</testng-results>
