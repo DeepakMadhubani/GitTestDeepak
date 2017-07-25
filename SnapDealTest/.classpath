@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<classpath>
-	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="C:/Users/admin/workspace/SnapDealTest/Jars/poi-3.9.jar"/>
-	<classpathentry kind="lib" path="C:/Users/admin/workspace/SnapDealTest/Jars/selenium-server-standalone-2.47.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/admin/workspace/SnapDealTest/Jars/testng-6.9.10.jar"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.7.0_13"/>
-	<classpathentry kind="output" path="bin"/>
-</classpath>
