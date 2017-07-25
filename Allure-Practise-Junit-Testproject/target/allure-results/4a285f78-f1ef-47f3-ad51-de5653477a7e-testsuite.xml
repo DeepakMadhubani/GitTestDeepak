@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1500882696171" stop="1500882696495" version="1.4.14" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>allure.junit.practise.test.SnapdealOrderTest</name>
+    <test-cases>
+        <test-case start="1500882696204" stop="1500882696216" status="passed">
+            <name>firstSimpleTest</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="NODE174"/>
+                <label name="thread" value="5192@NODE174.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="JUnit"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>
