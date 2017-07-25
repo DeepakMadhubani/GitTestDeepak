@@ -17,6 +17,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+
 import ru.yandex.qatools.allure.annotations.Step;
 
 //import allure.junit.practise.test.util.ExcelReader;
@@ -31,30 +32,38 @@ public class SnapdealOrderTest {
 	static File Filepth=new File(System.getProperty("user.dir")+"\\src\\main\\java\\allure\\junit\\practise\\test\\util\\SnapdealData.xls");
 	Actions action;
 	WebElement dailyNeeds;
-	private String sheetName="Sheet1";
-	private int rowNumber=2;
-	private String pinCode="Pincode";
-	private String ProductName="ProductName";
-	private String Quantity="Quantity";
-	private StringBuffer pinCodeFromExcel;
-	private String ProductNameFromExcel;
-	private StringBuffer QuantityFromExcel;
-	private StringBuffer sb;
-	private String snapdealTitle="Online Shopping in India at Snapdeal - Buy Books, Mobiles, Laptops, Apparel, Watches, Footwear, Recharge, Bill Payments & More";
+	String title="Online Shopping Site in India - Shop for Electronics, Mobile, Men & Women Clothing, Home - Snapdeal";
 	
+	@Before
 
-	
-
+	public void Setup()
+	{
+		driver=new FirefoxDriver();
+		driver.manage().window().maximize();
+		baseUrl = "http://www.snapdeal.com/";
+		action=new Actions(driver);
+	}
 
 	
 	@Test
 	public void firstSimpleTest() {
-		boolean a=true;
-		assertTrue("Result not equals to 4", 2 * 2 == 4);
+		driver.get(baseUrl);
+        abc();
+		
+	}
+	
+	@Test
+	public void failTest()
+	{
+		boolean a=false;
 		Assert.assertTrue(a);
 	}
 
-
+@Step
+public void abc()
+{
+Assert.assertEquals(title, driver.getTitle());
+}
 	
 
 }
