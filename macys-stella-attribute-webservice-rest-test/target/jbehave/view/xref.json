@@ -1,0 +1,125 @@
+{"xref": {
+  "whenMade": 1499764513631,
+  "createdBy": "JBehave",
+  "metaFilter": "",
+  "meta": [
+  ],
+  "stories": [
+    {
+      "description": "Description: Visble flag in Stella Product Type table should be defaulted to Y. \u000d\u000a\u000d\u000aVersion one Story B-44427 \u000d\u000alink - API changes: New Product Type create API to check Visible status flag.\u000d\u000a\u000d\u000a@feature  API changes: New Product Type create API to check Visible status flag.",
+      "narrative": "",
+      "name": "create_new_product_type_test.story",
+      "path": "com/macys/stella/attribute/webservice/rest/test/create_new_product_type_test.story",
+      "html": "com.macys.stella.attribute.webservice.rest.test.create_new_product_type_test.html",
+      "meta": "",
+      "scenarios": "Scenario:(1) Verify the Create Product type Create API for given Product type name with Department lists\u000aGiven the product type create API resource available at: product-type-service/v1/brands/\u000aWhen I create a product type for tenant <tenant> with a product type name as <productTypeName> is Active flag as <isActiveFlag> with department list as <departmentLists>\u000aThen I expect the create request to return with responseCode as <responseCode>\u000aAnd I expect a valid Product type id\u000aWhen I connect to STELLA DB with tenant <tenant> for validating status of Visible flag in STELLA DB\u000aThen I should see the Visible flag status as <visibleFlagStatus>\u000a\u000a\u000a",
+      "passed": false,
+      "started": 1499764500614,
+      "duration": 12139
+    }
+  ],
+  "stepMatches": [
+    {
+      "type": "THEN",
+      "annotatedPattern": "I expect the create request to return with responseCode as <responseCode>",
+      "resolvedPattern": "I\\s+expect\\s+the\\s+create\\s+request\\s+to\\s+return\\s+with\\s+responseCode\\s+as\\s+<responseCode>",
+      "usages": [
+        {
+          "story": "com/macys/stella/attribute/webservice/rest/test/create_new_product_type_test.story",
+          "scenario": "(1) Verify the Create Product type Create API for given Product type name with Department lists",
+          "step": "Then I expect the create request to return with responseCode as <responseCode>"
+        },
+        {
+          "story": "com/macys/stella/attribute/webservice/rest/test/create_new_product_type_test.story",
+          "scenario": "(1) Verify the Create Product type Create API for given Product type name with Department lists",
+          "step": "Then I expect the create request to return with responseCode as <responseCode>"
+        }
+      ]
+    },
+    {
+      "type": "WHEN",
+      "annotatedPattern": "I create a product type for tenant <tenant> with a product type name as <productTypeName> is Active flag as <isActiveFlag> with department list as <departmentLists>",
+      "resolvedPattern": "I\\s+create\\s+a\\s+product\\s+type\\s+for\\s+tenant\\s+<tenant>\\s+with\\s+a\\s+product\\s+type\\s+name\\s+as\\s+<productTypeName>\\s+is\\s+Active\\s+flag\\s+as\\s+<isActiveFlag>\\s+with\\s+department\\s+list\\s+as\\s+<departmentLists>",
+      "usages": [
+        {
+          "story": "com/macys/stella/attribute/webservice/rest/test/create_new_product_type_test.story",
+          "scenario": "(1) Verify the Create Product type Create API for given Product type name with Department lists",
+          "step": "When I create a product type for tenant <tenant> with a product type name as <productTypeName> is Active flag as <isActiveFlag> with department list as <departmentLists>"
+        },
+        {
+          "story": "com/macys/stella/attribute/webservice/rest/test/create_new_product_type_test.story",
+          "scenario": "(1) Verify the Create Product type Create API for given Product type name with Department lists",
+          "step": "When I create a product type for tenant <tenant> with a product type name as <productTypeName> is Active flag as <isActiveFlag> with department list as <departmentLists>"
+        }
+      ]
+    },
+    {
+      "type": "THEN",
+      "annotatedPattern": "I should see the Visible flag status as <visibleFlagStatus>",
+      "resolvedPattern": "I\\s+should\\s+see\\s+the\\s+Visible\\s+flag\\s+status\\s+as\\s+<visibleFlagStatus>",
+      "usages": [
+        {
+          "story": "com/macys/stella/attribute/webservice/rest/test/create_new_product_type_test.story",
+          "scenario": "(1) Verify the Create Product type Create API for given Product type name with Department lists",
+          "step": "Then I should see the Visible flag status as <visibleFlagStatus>"
+        },
+        {
+          "story": "com/macys/stella/attribute/webservice/rest/test/create_new_product_type_test.story",
+          "scenario": "(1) Verify the Create Product type Create API for given Product type name with Department lists",
+          "step": "Then I should see the Visible flag status as <visibleFlagStatus>"
+        }
+      ]
+    },
+    {
+      "type": "GIVEN",
+      "annotatedPattern": "the product type create API resource available at: $resourceUrl",
+      "resolvedPattern": "the\\s+product\\s+type\\s+create\\s+API\\s+resource\\s+available\\s+at:\\s+(.*)",
+      "usages": [
+        {
+          "story": "com/macys/stella/attribute/webservice/rest/test/create_new_product_type_test.story",
+          "scenario": "(1) Verify the Create Product type Create API for given Product type name with Department lists",
+          "step": "Given the product type create API resource available at: product-type-service/v1/brands/"
+        },
+        {
+          "story": "com/macys/stella/attribute/webservice/rest/test/create_new_product_type_test.story",
+          "scenario": "(1) Verify the Create Product type Create API for given Product type name with Department lists",
+          "step": "Given the product type create API resource available at: product-type-service/v1/brands/"
+        }
+      ]
+    },
+    {
+      "type": "WHEN",
+      "annotatedPattern": "I connect to STELLA DB with tenant <tenant> for validating status of Visible flag in STELLA DB",
+      "resolvedPattern": "I\\s+connect\\s+to\\s+STELLA\\s+DB\\s+with\\s+tenant\\s+<tenant>\\s+for\\s+validating\\s+status\\s+of\\s+Visible\\s+flag\\s+in\\s+STELLA\\s+DB",
+      "usages": [
+        {
+          "story": "com/macys/stella/attribute/webservice/rest/test/create_new_product_type_test.story",
+          "scenario": "(1) Verify the Create Product type Create API for given Product type name with Department lists",
+          "step": "When I connect to STELLA DB with tenant <tenant> for validating status of Visible flag in STELLA DB"
+        },
+        {
+          "story": "com/macys/stella/attribute/webservice/rest/test/create_new_product_type_test.story",
+          "scenario": "(1) Verify the Create Product type Create API for given Product type name with Department lists",
+          "step": "When I connect to STELLA DB with tenant <tenant> for validating status of Visible flag in STELLA DB"
+        }
+      ]
+    },
+    {
+      "type": "THEN",
+      "annotatedPattern": "I expect a valid Product type id",
+      "resolvedPattern": "I\\s+expect\\s+a\\s+valid\\s+Product\\s+type\\s+id",
+      "usages": [
+        {
+          "story": "com/macys/stella/attribute/webservice/rest/test/create_new_product_type_test.story",
+          "scenario": "(1) Verify the Create Product type Create API for given Product type name with Department lists",
+          "step": "And I expect a valid Product type id"
+        },
+        {
+          "story": "com/macys/stella/attribute/webservice/rest/test/create_new_product_type_test.story",
+          "scenario": "(1) Verify the Create Product type Create API for given Product type name with Department lists",
+          "step": "And I expect a valid Product type id"
+        }
+      ]
+    }
+  ]
+}}

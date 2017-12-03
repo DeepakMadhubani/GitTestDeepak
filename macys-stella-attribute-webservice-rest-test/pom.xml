@@ -1,0 +1,167 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>stellaattributemacyswebserviceresttest</groupId>
+  <artifactId>macys-stella-attribute-webservice-rest-test</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>macys-stella-attribute-webservice-rest-test</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  
+	<version.tibjms>6.1.0</version.tibjms>
+	<version.tibjmsadmin>6.1.0</version.tibjmsadmin>
+	<version.jms>1.0</version.jms>
+	<version.jersey>1.17.1</version.jersey>
+	<selenium.properties.file>env.properties</selenium.properties.file>
+	<selenium.datadriven.type>DEFAULT</selenium.datadriven.type>
+	<selenium.tags.include></selenium.tags.include>
+	<selenium.tags.disallowed></selenium.tags.disallowed>
+	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+	<logging-selenium-output.dir>target/logging-selenium-output</logging-selenium-output.dir>
+	<logging-failure-output.dir>target/logging-failure-output</logging-failure-output.dir>
+	<sonar.language>java</sonar.language>
+	<version.jbehave-core>3.7.5</version.jbehave-core>
+	<version.httpclient>4.4.1</version.httpclient>
+	<version.jbehave-junit-runner>1.0.1</version.jbehave-junit-runner>
+	<version.commons-lang>3.2</version.commons-lang>
+	<version.services-core>2.3.0-SNAPSHOT</version.services-core>
+	<version.jackson>2.4.2</version.jackson>
+	<version.json-simple>1.1.1</version.json-simple>
+	<version.restassured>2.4.1</version.restassured>
+	<!-- <version.services-core>2.0.0-SNAPSHOT</version.services-core> -->
+	<commons-httpclient.version>3.1</commons-httpclient.version>
+	<solrj.version>4.7.2</solrj.version>
+</properties>
+
+
+  <dependencies>
+      <dependency>
+    <groupId>com.oracle</groupId>
+    <artifactId>ojdbc14</artifactId>
+    <version>10.2.0.3.0</version>
+</dependency>
+<dependency>
+    <groupId>javax.xml</groupId>
+    <artifactId>jaxb-api</artifactId>
+    <version>2.1</version>
+</dependency>
+      <dependency>
+		    <groupId>commons-httpclient</groupId>
+		    <artifactId>commons-httpclient</artifactId>
+		    <version>${commons-httpclient.version}</version>
+		</dependency>
+		<dependency>
+    <groupId>javax.servlet</groupId>
+    <artifactId>servlet-api</artifactId>
+    <version>2.5</version>
+    <scope>provided</scope>
+</dependency>
+      <dependency>
+    <groupId>jfree</groupId>
+    <artifactId>jcommon</artifactId>
+    <version>1.0.0</version>
+</dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    
+   <!--  <dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-api</artifactId>
+    <version>1.7.9</version>
+</dependency> -->
+<dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-log4j12</artifactId>
+    <version>1.7.10</version>
+    <scope>test</scope>
+</dependency>
+    <dependency><!-- Used for custom logging operations -->
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency><!-- Object comparison library (Phase Out in favor of built-in 
+				asserts) -->
+			<groupId>org.hamcrest</groupId>
+			<artifactId>hamcrest-all</artifactId>
+			<version>1.3</version>
+			<scope>test</scope>
+			</dependency>
+			<dependency>
+			<groupId>org.jbehave</groupId>
+			<artifactId>jbehave-core</artifactId>
+			<version>${version.jbehave-core}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>de.codecentric</groupId>
+			<artifactId>jbehave-junit-runner</artifactId>
+			<version>${version.jbehave-junit-runner}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>${version.httpclient}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>${version.commons-lang}</version>
+		</dependency>
+		<dependency>
+			<groupId>net.sourceforge.jexcelapi</groupId>
+			<artifactId>jxl</artifactId>
+			<version>2.6.12</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>3.9</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+			<version>${version.jackson}</version>			
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>${version.jackson}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-annotations</artifactId>
+			<version>${version.jackson}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.googlecode.json-simple</groupId>
+			<artifactId>json-simple</artifactId>
+			<version>${version.json-simple}</version>
+		</dependency>
+		<dependency><!--Jason response parser -->
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+		<version>20090211</version>
+       </dependency>
+		<dependency>
+			<groupId>com.jayway.restassured</groupId>
+			<artifactId>json-path</artifactId>
+			<version>${version.restassured}</version>
+		</dependency>
+		
+  </dependencies>
+</project>
